@@ -3,8 +3,8 @@ cmeps_mk = $(CMEPS_BINDIR)/cmeps.mk
 all_component_mk_files+=$(cmeps_mk)
 
 # Location of source code and installation
-CMEPS_SRCDIR?=$(ROOTDIR)/CMEPS
-CMEPS_BINDIR?=$(ROOTDIR)/CMEPS_INSTALL
+CMEPS_SRCDIR?=$(ROOTDIR)/CMEPS-interface/CMEPS
+CMEPS_BINDIR?=$(ROOTDIR)/CMEPS-interface/CMEPS_INSTALL
 
 # Make sure the expected directories exist and are non-empty:
 $(call require_dir,$(CMEPS_SRCDIR),CMEPS source directory)
